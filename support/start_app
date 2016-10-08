@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Assumes RAILS_ENV is set
+bundle exec rake db:setup
+export RAILS_SECRET=$(bundle exec rake secret)
+
+bundle exec rails server -b 0.0.0.0

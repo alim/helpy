@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.7.1'
 
+gem 'execjs'
+gem 'therubyracer'
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 gem 'pg_search'
@@ -181,4 +184,4 @@ group :production do
   gem 'unicorn'
 end
 
-ruby "2.2.1"
+ruby "2.3.1"

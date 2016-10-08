@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  db:
+    image: postgres:9.6
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: helpy
+    ports:
+      - 5432:5432
+  helpy:
+    build: .
+    ports:
+      - 80:3000

@@ -9,11 +9,17 @@ development:
   <<: *default
   database: helpy_development
   port: 5432
-  host: localhost
+  host: db
+  username: helpy
+  password: password
 
 test:
   <<: *default
   database: helpy_test
+  port: 5432
+  host: db
+  username: helpy
+  password: password
 
 production:
   <<: *default
